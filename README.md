@@ -1,18 +1,10 @@
-# vscode-sql-template-literal
+# sql-template-literal-comment
 
-Syntax highlighting for code like:
+Syntax highlighting for SQL in JavaScript code using comments:
 
 ```js
-const query = sql`SELECT * FROM users`;
-```
-
-## Publishing
-
-May require token, stored in last pass. Go to
-https://forbeslindesay.visualstudio.com/_details/security/tokens if token needs
-regenerating.
-
-```
-npm install -g vsce
-vsce publish
+const query = `/* SQL */
+  SELECT * FROM users
+    WHERE age > 18;
+`;
 ```
